@@ -17,5 +17,27 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+<property>
+   <name>dfs.datanode.plugins</name>
+   <value>org.apache.hadoop.ozone.HddsDatanodeService</value>
+</property>
+
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:////Users/xyao/deploy/ozone/data/dn/disk1;file:////Users/xyao/deploy/ozone/data/dn/disk2</value>
+        <description>DataNode directory for storing data chunks.</description>
+    </property>
+
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:////Users/xyao/deploy/ozone/data/nn/disk1;file:////Users/xyao/deploy/ozone/data/nn/disk2</value>
+        <description>NameNode directory for namespace and transaction logs storage.</description>
+    </property>
+
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+        <description>Number of replication for each chunk.</description>
+    </property>
 
 </configuration>

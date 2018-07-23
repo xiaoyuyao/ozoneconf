@@ -20,5 +20,39 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+ <property>
+      <name>ozone.enabled</name>
+      <value>True</value>
+    </property>
+
+    <property>
+      <name>ozone.metadata.dirs</name>
+      <value>file:////Users/xyao/deploy/ozone/data/ozone/disk1/meta</value>
+    </property>
+
+    <property>
+      <name>ozone.scm.names</name>
+      <value>127.0.0.1</value>
+    </property>
+
+    <property>
+       <name>ozone.scm.client.address</name>
+       <value>127.0.0.1:9860</value>
+    </property>
+
+     <property>
+       <name>ozone.scm.block.client.address</name>
+       <value>127.0.0.1:9863</value>
+     </property>
+
+     <property>
+       <name>ozone.scm.datanode.address</name>
+       <value>127.0.0.1:9861</value>
+     </property>
+
+     <property>
+       <name>ozone.om.address</name>
+       <value>127.0.0.1:9874</value>
+     </property>
 
 </configuration>
